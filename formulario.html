@@ -2,394 +2,393 @@
 
 <html>
   <head>
-  <title>
-    ItGest Academy
-  </title>
+    <title>
+      ItGest Academy
+    </title>
 
-  <meta charset="utf=8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf=8">
   </head>
 
   <header>
-    <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="attachment-full size-full" alt="" loading="lazy">
-    <h1>
-      Inscreve-te
-    </h1>
+    
   </header>
 
-  <body>
-    <form>
-      <label for="Course">
-        Academia a que se está a candidatar*:
+  <style>
+    label {
+      font-size: 20px;
+    }
 
-      </label>
 
-      <br>
+  </style>
 
-      <select id="course" >
+  <body style=" background-image: linear-gradient(#e3d76d, #ffc107);" >
+    
+    <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;"> <!-- Titulo -->      
+      <div>
+        <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="attachment-full size-full" alt="" loading="lazy">
+      </div>
+      <div>
+        <h1 style="font-family: Times New Roman; text-align: center; text-decoration: underline; padding: 5px; font-weight: 600;" >
+          Inscreve-te na nossa Academia 
+        </h1>
+      </div>
+      <div>
+        <img src="https://academy.itgest.pt/wp-content/uploads/2021/03/itgest-academy-logo.svg" class="custom-logo astra-logo-svg" style="width: 300px; height: 80px; float: right ;" alt="ITGest Academy">
+      </div>
+
+    </div>
+    <!-- Inicio do Form -->
+    <form style="border: 1px solid black; padding:10px; ">
+      <!-- Formulário com informações pessoais     -->
+      <div class="personal-info" style="border: 1px solid black">
+
+        <label for="Course" style="font-weight:600; padding: 15px;">
+          Academia a que se está a candidatar*:
+        </label>
+          
+        <select id="course" style="text-align: center;" >          
+          <option value="Sap" >SAP</option>
+          <option value="DEV" disabled>DEV (inscrições encerradas)</option>
+          <option value="Analitycs">Business Analitics</option>                  
+        </select>
         
-        <option value="Sap" >SAP</option>
-        <option value="DEV" disabled>DEV (inscrições encerradas)</option>
-        <option value="Analitycs">Business Analitics</option>
+        <br> <br>
         
-      
-      </select>
-
-      <br> <hr>
-      
-      <label for="FullName">
-        Nome e Apelido
-
-      </label>
-      <br>
-      <input type="text"
-        id="fullName"
-        name="fullName">
-
-      <br> <hr>
-
-      <label for="email">
-        Endereço de e-mail:
-
-      </label>
-      <br>
-      <input type="email"
-        id="email"
-        name="email">
+        <label for="FullName" style="font-weight:600; padding: 15px;">
+          Nome e Apelido*:
+        </label>
         
-      <br> <hr>
-
-      <label for="datemax">
-        Data de nascimento (>18 anos):
-      </label>
-      <br>
-
-      <input type="date" 
-        id="datemax" 
-        name="datemax" 
-        max="2001-01-01">
-
+        <input type="text " 
+          id="fullName"
+          name="fullName">
         
+        <br> <br>
+
+        <label for="email" style="font-weight:600; padding: 15px;">
+          Endereço de e-mail*:
+        </label>
+        
+        <input type="email"
+          id="email"
+          name="email">
+        
+        <br> <br>
+
+        <label for="datemin" style="font-weight:600; padding: 15px;">
+          Data de nascimento (>18 anos)*:
+        </label>
+        
+        <input type="date" 
+          id="datemax" 
+          name="datemax" 
+          max="2001-01-01">
+
+      </div>
 
       <hr> <br>
+      <!-- Formulario com as Habilitações e Formações -->
+      <div style="border: 1px solid black"
+        class="background-info">
 
-      <label for="habilitacoes">
-        Habilitações:
-      </label>
-      <br>
-      
-      
+        <label for="habilitacoes" style="font-weight:600; padding: 15px;" >
+          Habilitações:
+        </label>
+              
+        <div style="display: flex; margin-top: 10px; padding:15px; ">
 
-      <input type="checkbox" 
-        id="habilitacoes1" 
-        name="habilitacoes1" 
-        value="Ensino Secundário
-        ">
+          <input type="checkbox"
+            
+            id="habilitacoes1" 
+            name="habilitacoes1" 
+            value="Ensino Secundário">
+            
+          <label for="habilitacoes1" style="text-decoration: underline; padding: 1px;">
+            Ensino Secundário
+          </label>
+              
+          <input type="checkbox" 
+            id="habilitacoes2" 
+            name="habilitacoes2" 
+            value="Licenciatura">
 
-      <label for="habilitacoes1">
-        Ensino Secundário
+          <label for="habilitacoes2" style="text-decoration: underline; padding: 1px;"> 
+            Licenciatura
+          </label>
 
-      </label>
+          <input type="checkbox" 
+            id="habilitacoes3" 
+            name="habilitacoes3" 
+            value="Mestrado">
 
-      
-      <br>
+          <label for="habilitacoes3" style="text-decoration: underline; padding: 1px;"> 
+            Mestrado
+          </label>
+          
+          <input type="checkbox" 
+            id="habilitacoes4" 
+            name="habilitacoes4" 
+            value="Doutorament">
 
-      <input type="checkbox" 
-        id="habilitacoes2" 
-        name="habilitacoes2" 
-        value="Licenciatura">
+          <label for="habilitacoes4" style="text-decoration: underline; padding: 1px;"> 
+            Doutoramento
+          </label>
+          
+          <input type="checkbox" 
+            id="habilitacoes5" 
+            name="habilitacoes5" 
+            value="Outro">
 
-      <label for="habilitacoes2"> 
-        Licenciatura
-      </label>
+          <label for="habilitacoes5" style="text-decoration: underline; padding: 1px;"> 
+            Outro
+          </label>
+        </div>
 
-      <br>
+        <label for="formacao" style="font-weight:600; padding: 15px;">
+          Formações:
+        </label>
 
-      <input type="checkbox" 
-        id="habilitacoes3" 
-        name="habilitacoes3" 
-        value="Mestrado">
+        <div style="display: flex; margin-top:10px; padding:15px;">
+          
+          <input type="checkbox" 
+            id="Formaçao1" 
+            name="Formaçao1" 
+            value="Ciencias Sociais e Humanos">            
+          
+          <label for="Formaçao1" style="text-decoration: underline; padding: 1px;">
+            Ciencias Sociais e Humanos
 
-      <label for="habilitacoes3"> 
-        Mestrado
-      </label>
+          </label>
 
-      <br>
+          <input type="checkbox" 
+            id="Formacao2" 
+            name="Formacao2" 
+            value="Ciencias Empresariais">
 
-      <input type="checkbox" 
-        id="habilitacoes4" 
-        name="habilitacoes4" 
-        value="Doutorament">
+          <label for="Formacao2" style="text-decoration: underline; padding: 1px;"> 
+            Ciencias Empresariais
+          </label>
 
-      <label for="habilitacoes4"> 
-        Doutoramento
-      </label>
+          <input type="checkbox" 
+            id="Formacao3" 
+            name="Formacao3" 
+            value="Gestao/economia">
 
-      <br>
+          <label for="Formacao3" style="text-decoration: underline; padding: 1px;"> 
+            Gestao/economia
+          </label>
+          
+          <input type="checkbox" 
+            id="Formacao4" 
+            name="Formacao4" 
+            value="Informatica">
 
-      <input type="checkbox" 
-        id="habilitacoes5" 
-        name="habilitacoes5" 
-        value="Outro">
+          <label for="Formacao4" style="text-decoration: underline; padding: 1px;"> 
+            Informatica
+          </label>
 
-      <label for="habilitacoes5"> 
-        Outro
-      </label>
+          <input type="checkbox" 
+            id="Formacao5" 
+            name="Formacao5" 
+            value="Informatica de Gestao">
 
-      <hr> <br>
+          <label for="Formacao5" style="text-decoration: underline; padding: 1px;"> 
+            Informatica de Gestao
+          </label>
+          
+          <input type="checkbox" 
+            id="Formaçao6" 
+            name="Formaçao6" 
+            value="Engenharia e técnicas afins
+            ">
 
-      <label for="formacao">
-        Formações:
-      </label>
-      
-      <br>
+          <label for="Formaçao1" style="text-decoration: underline; padding: 1px;">
+            Engenharia e técnicas afins
+          </label>
 
-      <input type="checkbox" 
-        id="Formaçao1" 
-        name="Formaçao1" 
-        value="Ciencias Sociais e Humanos
-        ">
+          <input type="checkbox" 
+            id="Formacao7" 
+            name="Formacao7" 
+            value="Contabilidade/ Finanças">
 
-      
-      <label for="Formaçao1">
-        Ciencias Sociais e Humanos
+          <label for="Formacao2" style="text-decoration: underline; padding: 1px;"> 
+            Contabilidade/ Finanças
+          </label>
 
-      </label>
-      
-      <br>
+          <input type="checkbox" 
+            id="Formacao8" 
+            name="Formacao8" 
+            value="Saúde">
 
-      <input type="checkbox" 
-        id="Formacao2" 
-        name="Formacao2" 
-        value="Ciencias Empresariais">
+          <label for="Formacao3" style="text-decoration: underline; padding: 1px;"> 
+            Saúde
+          </label>
+          
+          <input type="checkbox" 
+            id="Formacao9" 
+            name="Formacao9" 
+            value="Serviços Sociais">
 
-      <label for="Formacao2"> 
-        Ciencias Empresariais
-      </label>
+          <label for="Formacao4" style="text-decoration: underline; padding: 1px;"> 
+            Serviços Sociais
+          </label>
 
-      <br>
+          <input type="checkbox" 
+            id="Formacao10" 
+            name="Formacao10" 
+            value="Outro">
 
-      <input type="checkbox" 
-        id="Formacao3" 
-        name="Formacao3" 
-        value="Gestao/economia">
+          <label for="Formacao5" style="text-decoration: underline; padding: 1px;"> 
+            Outro
+          </label>
+        </div>
 
-      <label for="Formacao3"> 
-        Gestao/economia
-      </label>
-      <br>
-      <input type="checkbox" 
-        id="Formacao4" 
-        name="Formacao4" 
-        value="Informatica">
+        <div style="margin-top:15px;">
+          <label for="date" style="font-weight:600; padding: 15px;">
+            Ano de Conclusão:
+          </label>
 
-      <label for="Formacao4"> 
-        Informatica
-      </label>
+          <input type="number" 
+            id="dateconclusao" 
+            name="dateconclusao"> 
+        </div>
 
-      <br>
+        <div style="margin-top:15px; ">
+          <label for="motivo" style="font-weight:600; padding: 15px;">
+            Motivo da Candidatura
+          </label>
 
-      <input type="checkbox" 
-        id="Formacao5" 
-        name="Formacao5" 
-        value="Informatica de Gestao">
-
-      <label for="Formacao5"> 
-        Informatica de Gestao
-      </label>
-      <br>
-      
-      <input type="checkbox" 
-        id="Formaçao6" 
-        name="Formaçao6" 
-        value="Engenharia e técnicas afins
-        ">
-
-      <label for="Formaçao1">
-        Engenharia e técnicas afins
-
-      </label>
-      
-      <br>
-
-      <input type="checkbox" 
-        id="Formacao7" 
-        name="Formacao7" 
-        value="Contabilidade/ Finanças">
-
-      <label for="Formacao2"> 
-        Contabilidade/ Finanças
-      </label>
-
-      <br>
-
-      <input type="checkbox" 
-        id="Formacao8" 
-        name="Formacao8" 
-        value="Saúde">
-
-      <label for="Formacao3"> 
-        Saúde
-      </label>
-      <br>
-      <input type="checkbox" 
-        id="Formacao9" 
-        name="Formacao9" 
-        value="Serviços Sociais">
-
-      <label for="Formacao4"> 
-        Serviços Sociais
-      </label>
-
-      <br>
-
-      <input type="checkbox" 
-        id="Formacao10" 
-        name="Formacao10" 
-        value="Outro">
-
-      <label for="Formacao5"> 
-        Outro
-      </label>
-
-      <br>
-
-      <label for="date">
-        Ano de Conclusão:
-      </label>
-
-      <input type="number" 
-        id="dateconclusao" 
-        name="dateconclusao" 
-        >
-
+          <input type="text"
+            id="motivocandidatura"
+            name="motivocandidatura">
+        </div>
+      </div>
 
       <hr> <br>
-
-      <label for="motivo">
-        Motivo da Candidatura
-      </label>
-
-      <input type="text"
-        id="motivocandidatura"
-        name="motivocandidatura">
-
-      <hr>  <br>
-
-      <label for="comoConheceAcademia">
-        Como obteve conhecimento da nossa Academia?*
-      </label>
       
-      <br>
+      <div style="border: 1px solid black">        
+        <label for="comoConheceAcademia" style="font-weight:600; padding: 15px;">
+          Como obteve conhecimento da nossa Academia?*
+        </label>
+        
+        <div style="display: flex; margin-top: 10px; padding:15px; ">
 
-      <input type="checkbox" 
-        id="ComoConhece1" 
-        name="ComoConhece1" 
-        value="Conheço alguém que faz parte do Grupo ID/ ITGEST
-        ">
+          <input type="checkbox" 
+            id="ComoConhece1" 
+            name="ComoConhece1" 
+            value="Conheço alguém que faz parte do Grupo ID/ ITGEST">
+                      
+          <label for="ComoConhece1" style="text-decoration: underline; padding: 1px;">
+            Conheço alguém que faz parte do Grupo ID/ ITGEST
+          </label>
+                    
+          <input type="checkbox" 
+            id="ComoConhece2" 
+            name="ComoConhece2" 
+            value="Redes Sociais (Facebook, instagram ou outro)">
 
-      
-      <label for="ComoConhece1">
-        Conheço alguém que faz parte do Grupo ID/ ITGEST
+          <label for="ComoConhece2" style="text-decoration: underline; padding: 1px;"> 
+            Redes Sociais (Facebook, instagram ou outro)
+          </label>
 
-      </label>
-      
-      <br>
+          <input type="checkbox" 
+            id="ComoConhece3" 
+            name="ComoConhece3" 
+            value="Linkedin">
 
-      <input type="checkbox" 
-        id="ComoConhece2" 
-        name="ComoConhece2" 
-        value="Redes Sociais (Facebook, instagram ou outro)">
+          <label for="ComoConhece3" style="text-decoration: underline; padding: 1px;"> 
+            Linkedin
+          </label>
 
-      <label for="ComoConhece2"> 
-        Redes Sociais (Facebook, instagram ou outro)
-      </label>
+          <input type="checkbox" 
+            id="ComoConhece4" 
+            name="ComoConhece4" 
+            value="Através da faculdade/universidade">
 
-      <br>
+          <label for="ComoConhece4" style="text-decoration: underline; padding: 1px;"> 
+            Através da faculdade/universidade
+          </label>
 
-      <input type="checkbox" 
-        id="ComoConhece3" 
-        name="ComoConhece3" 
-        value="Linkedin">
+          <input type="checkbox" 
+            id="ComoConhece5" 
+            name="ComoConhece5" 
+            value="Outro">
 
-      <label for="ComoConhece3"> 
-        Linkedin
-      </label>
-      <br>
-      <input type="checkbox" 
-        id="ComoConhece4" 
-        name="ComoConhece4" 
-        value="Através da faculdade/universidade">
+          <label for="ComoConhece5" style="text-decoration: underline; padding: 1px;"> 
+            Outro
+          </label>
+        </div>
 
-      <label for="ComoConhece4"> 
-        Através da faculdade/universidade
-      </label>
+        <div style="display:flex; justify-content: start;">
+          <div style="margin-top: 10px;">
+            <label for="CV" style="font-weight:600; padding: 15px; ">
+              Upload de CV:
+            </label> 
+    
+            <input 
+              type="file" 
+              id="CV" 
+              name="CV">
+          </div>
 
-      <br>
+          <div style="margin-top: 10px; margin-left: 80px;">
+            <label for="certificadoHabilitacoes" style="font-weight:600; padding: 15px;">
+              Upload de Certificado de Habilitações*
+            </label>
+            
+            <input type="file"              
+              id="certificadohabilitacoes" 
+              name="certificadohabilitacoes">
 
-      <input type="checkbox" 
-        id="ComoConhece5" 
-        name="ComoConhece5" 
-        value="Outro">
+          </div>
+        </div>
 
-      <label for="ComoConhece5"> 
-        Outro
-      </label>
+        <div style="margin-top: 10px;">
 
-      <hr> <br>
+          <textarea cols="151" 
+          id="info" 
+          name="info" 
+          rows="10" 
+          placeholder="Deixa-nos as tuas dúvidas / pedidos de esclarecimento">          
+          </textarea> 
+        </div>
 
-      <label for="CV">
-        Upload de CV:
-      </label>
-      <br>
+        <div style="margin-top: 10px;">
+          <input type="radio" 
+            id="consent" 
+            name="consent" 
+            value="consentiment">
 
-      <input 
-        type="file" 
-        id="CV" 
-        name="CV">
-
-      <br> <hr> <br>
-
-      <label for="certificadoHabilitacoes">
-        Upload de Certificado de Habilitações*
-
-      </label>
-      <br>
-
-      <input 
-        type="file" 
-        id="certificadohabilitacoes" 
-        name="certificadohabilitacoes">
-
-      <hr> <br> <br>
-
-      <textarea 
-        id="info" 
-        name="info" 
-        rows="10" 
-        cols="210"
-        placeholder="Deixa-nos as tuas dúvidas / pedidos de esclarecimento">
-
-      </textarea> 
+          <label for="consent">
+            Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na <a href="https://academy.itgest.pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>
+          </label>
+        </div>
+      </div>
 
       <br> <hr>
 
-      <input type="radio" 
-        id="consent" 
-        name="consent" 
-        value="consentiment">
+      
+        <div style="margin-top: 15px; display: flex; justify-content: center; align-items: center;">
+          <button type="button"
+            onclick="alert(`Entraremos em contacto assim que for possivel`)"
+            style="border: dot 1px red; width: 1000px; height: 40px; background-color:  #eb5555; color: white; text-align: center; font-size: 25px" >
 
-      <label for="consent">
-        Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na <a href="https://academy.itgest.pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>
-      </label>
+          Enviar Inscrição para futuramente te tornares colaborador da ItGest
+          </button>
+        </div>
+      
 
-      <br> <br> <hr>
+    </form>
 
-      <button type="button"
-        onclick="alert(`Entraremos em contacto assim que for possivel`)"
-      >
-      Enviar Inscrição para futuramente te tornares colaborador da ItGest
-      </button>
-      <h2> Formandos</h2>
+  </body>
+  
+  <footer style="height: 100px; width: 100px;">
+
+  </footer>
+</html>
+ 
+      <!-- <h2> Formandos</h2>
       <table>
         <tr>
           <th>
@@ -461,10 +460,10 @@
             Inglaterra
           </td>
         </tr>
-      </table>
+      </table> -->
 
 
-      <table>
+      <!-- <table>
         <tr>
           <th>Name</th>
           <th>Email</th>
@@ -476,17 +475,17 @@
           <th >222941221</th>
           <th >222941221</th>
         </tr>
-      </table>
-      <br> <br>
-      <button
+      </table> -->
+     
+      <!-- <button
       onclick="window.print()">
         Print this page
 
-      </button>
-      <br> <br>
-      <iframe src="https://www.google.pt" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+      </button> -->
+      <!-- <br> <br> -->
+      <!-- <iframe src="https://www.google.pt" style="height:200px;width:300px;" title="Iframe Example"></iframe> -->
 
-      <div class="mapouter">
+      <!-- <div class="mapouter">
         <div class="gmap_canvas">
           <iframe width="600" 
             height="500" 
@@ -497,28 +496,25 @@
             marginheight="0" 
             marginwidth="0">
           
-          </iframe>
+          </iframe> -->
           
-          <a href="https://putlocker-is.org">
+          <!-- <a href="https://putlocker-is.org">
             putlocker
-          </a>
+          </a> -->
 
-          <br>
-
-          <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}
-          </style>
-
-          <a href="https://www.embedgooglemap.net">
-            embed a google map
-          </a>
-
-          <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
-          </style>
           
-        </div>
-      </div>
 
-      <iframe width="560" 
+          <!-- <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+          </style> -->
+
+          <!-- <a href="https://www.embedgooglemap.net">
+            embed a google map
+          </a> -->
+
+          <!-- <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+          </style> -->
+                
+      <!-- <iframe width="560" 
         height="315" 
         src="https://www.youtube.com/embed/MmH_lCRBy0I" 
         title="YouTube video player" 
@@ -526,11 +522,9 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
       
-      </iframe>
+      </iframe> -->
 
-      <a href="#section2"> Aponta para o id section2</a>
+      <!-- <a href="#section2"> Aponta para o id section2</a> -->
       <!-- scroll-behavior: smooth -->
-    </form>
-  </body>
-</html>
+   
 
