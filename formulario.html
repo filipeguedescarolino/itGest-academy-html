@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html>
   <head>
     <title>
@@ -107,14 +109,7 @@
       padding: 15px;
     }
 
-    
-
-
-    
-
-    
-
-
+    /* Nao deu tempo para fazer portanto resto ficou inline */  
   </style>
 
   <body>
@@ -125,7 +120,7 @@
       </div>
       <div class="text-title">
         <h1>
-          Inscreve-te na nossa Academia
+          Inscreve-te na nossa Academia <i class="far fa-smile"></i>
         </h1>
       </div>
       <div>
@@ -188,18 +183,17 @@
 
       <hr> <br>
 
-      <!-- Formulario com as Habilitações e Formações -->
+      <!-- Form: Academic Background -->
       <div style="color: black; padding: 15px; border: 3px solid ; background-color:#ffd147; box-shadow: 5px 10px;"
         class="background-info">
-
+        <!-- Form: Habilitations and checkbox -->
         <label for="habilitacoes" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;" >
           Habilitações:
         </label>
               
         <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; font-size: 18px; ">
 
-          <input type="checkbox"
-            
+          <input type="checkbox"            
             id="habilitacoes1" 
             name="habilitacoes1" 
             value="Ensino Secundário">
@@ -244,13 +238,12 @@
             Outro
           </label>
         </div>
-
+        <!-- Form: Skills -->
         <label for="formacao" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
           Formações:
         </label>
 
-        <div style="display: flex; margin-top:10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">
-          
+        <div style="display: flex; margin-top:10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">          
           <input type="checkbox" 
             id="Formaçao1" 
             name="Formaçao1" 
@@ -344,6 +337,7 @@
           </label>
         </div>
 
+        <!-- Form: graduation year -->
         <div style="margin-top:15px;">
           <label for="date" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
             Ano de Conclusão:
@@ -353,7 +347,7 @@
             id="dateconclusao" 
             name="dateconclusao"> 
         </div>
-
+        <!-- Form: reason to apply -->
         <div style="margin-top:15px; ">
           <label for="motivo" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
             Motivo da Candidatura
@@ -366,14 +360,14 @@
       </div>
 
       <hr> <br>
-      <!-- Formulario com CV, Certificado e Conhecimento da Academia -->
-      <div style="color: black; padding: 15px; border: 3px solid; background-color:#ffd147; box-shadow: 5px 10px;">        
+      <!-- Form: how Cv Certificate Comments Politics -->
+      <div style="color: black; padding: 15px; border: 3px solid; background-color:#ffd147; box-shadow: 5px 10px;"> 
+        <!-- Form: knowledge-academy -->
         <label for="comoConheceAcademia" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
           Como obteve conhecimento da nossa Academia?*
         </label>
         
         <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">
-
           <input type="checkbox" 
             id="ComoConhece1" 
             name="ComoConhece1" 
@@ -420,6 +414,7 @@
           </label>
         </div>
 
+        <!-- Form: upload cv & certificate -->
         <div style="display:flex; justify-content: start;">
           <div style="margin-top: 10px;">
             <label for="CV" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif; ">
@@ -444,16 +439,18 @@
           </div>
         </div>
 
+        <!-- Form: textarea -->
         <div style="margin-top: 10px;">
 
           <textarea cols="151" 
-          id="info" 
-          name="info" 
-          rows="10" 
-          placeholder="Deixa-nos as tuas dúvidas / pedidos de esclarecimento">          
+            id="info" 
+            name="info" 
+            rows="10" 
+            placeholder="Deixa-nos as tuas dúvidas / pedidos de esclarecimento">          
           </textarea> 
         </div>
 
+        <!-- Form: consent -->
         <div style="margin-top: 10px;">
           <input type="radio" 
             id="consent" 
@@ -468,12 +465,13 @@
 
       <br> <hr>
 
-      <!-- Button para inscrição   -->
+      <!-- Form: Button to submit -->
       <div style="color: black; border: 3px solid ; margin-top: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; background-color:#ffd147;">
 
         <button type="button"
           onclick="alert(`Entraremos em contacto assim que for possivel`)"
-          style=" box-shadow: 5px 10px; border: 3px solid black; height: 40px;  color: black; text-align: center; font-size: 25px; font-family: Helvetica, sans-serif; background-color:#ffc107;" >
+          style=" box-shadow: 5px 10px; border: 3px solid black; height: 40px;  
+            color: black; text-align: center; font-size: 25px; font-family: Helvetica, sans-serif; background-color:#ffc107;" >
 
         Enviar Inscrição para futuramente te tornares colaborador da ItGest
         </button>
