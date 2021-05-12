@@ -16,38 +16,135 @@
   </header>
 
   <style>
+
+    body {
+      background-color: #000000;
+    }
+
+    /* Includes title and images */
+
+    .title-and-images {
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: center;
+    }
+
+    .image-left {
+      margin-left: 20px;
+      position: relative;
+      animation-name: image;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+       
+    }
+
+    .image-right {      
+      transform: rotate(180deg);
+      position: relative;
+      animation-name: image;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;     
+    }
+
+    .text-title {
+      position: relative;
+      animation-duration: 6s;
+      animation-name: text-title;
+      display: inline-block;
+    }
+
+    .text-title, h1 {
+      color:#fbbc00 ;   
+      text-transform: uppercase;  
+      padding: 5px; 
+      font-weight: 600; 
+      font-family: Verdana, sans-serif;
+    }
+
+    /* Animations for images and title */
+
+    @keyframes image {
+      from {
+        transform: rotate(0deg);
+        opacity: 0;
+      }
+      to {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes text-title {
+      from {        
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Begining of the Form */
+    
+    .registration-form {
+      border: 3px solid black;
+      padding:10px;
+    }
+
+    /* Personal Information  */
+
+    .personal-info {
+      color:black; 
+      padding: 15px;
+      border: 3px solid; 
+      background-color:#ffd147; 
+      font-family: Verdana, sans-serif;
+      box-shadow: 5px 10px;
+    }
+
+    .personal-info, label {
+      font-weight:600; 
+      padding: 15px;
+    }
+
+    
+
+
+    
+
     
 
 
   </style>
 
-  <body style=" background-image: linear-gradient(#e3d76d, #ffc107);" >
-    
-    <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center; "> <!-- Titulo -->      
+  <body>
+    <!-- Title and images -->
+    <div class="title-and-images">       
       <div>
-        <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="attachment-full size-full" alt="" loading="lazy">
+        <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="image-left attachment-full size-full" alt="" loading="lazy">
       </div>
-      <div>
-        <h1 style=" text-align: center; text-transform: uppercase;  padding: 5px; font-weight: 600; font-family: Verdana, sans-serif;" >
-          Inscreve-te na nossa Academia 
+      <div class="text-title">
+        <h1>
+          Inscreve-te na nossa Academia
         </h1>
       </div>
       <div>
-        <img src="https://academy.itgest.pt/wp-content/uploads/2021/03/itgest-academy-logo.svg" class="custom-logo astra-logo-svg" style="width: 300px; height: 80px; float: right ;" alt="ITGest Academy">
+        <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="image-right attachment-full size-full" alt="" loading="lazy">
       </div>
-
     </div>
-    <!-- Inicio do Form -->
-    <form style="border: 3px solid black; padding:10px; ">
 
-      <!-- Formulário com informações pessoais     -->
-      <div class="personal-info" style="color: #f7efd3; padding: 15px;border: 3px solid ; background-color:#9c9999; font-family: Verdana, sans-serif;" >
+    <!-- Begining of the Form -->
+    <form class="registration-form">
 
-        <label for="Course" style="font-weight:600; padding: 15px; ">
+      <!-- Form : Personal-info     -->
+      <div class="personal-info">
+
+        <!-- Personal-info: Academy -->
+        <label for="Course" >
           Academia a que se está a candidatar*:
         </label>
           
-        <select id="course" style="text-align: center;" >          
+        <select id="course">          
           <option value="Sap" >SAP</option>
           <option value="DEV" disabled>DEV (inscrições encerradas)</option>
           <option value="Analitycs">Business Analitics</option>                  
@@ -55,7 +152,8 @@
         
         <br> <br>
         
-        <label for="FullName" style="font-weight:600; padding: 15px; ">
+        <!-- Personal-info: Full Name -->
+        <label for="FullName" >
           Nome e Apelido*:
         </label>
         
@@ -65,7 +163,8 @@
         
         <br> <br>
 
-        <label for="email" style="font-weight:600; padding: 15px;">
+        <!-- Personal-info: Email -->
+        <label for="email">
           Endereço de e-mail*:
         </label>
         
@@ -75,7 +174,8 @@
         
         <br> <br>
 
-        <label for="datemin" style="font-weight:600; padding: 15px;">
+        <!-- Personal-info: Date -->
+        <label for="datemin">
           Data de nascimento (>18 anos)*:
         </label>
         
@@ -89,14 +189,14 @@
       <hr> <br>
 
       <!-- Formulario com as Habilitações e Formações -->
-      <div style="color: white; padding: 15px; border: 3px solid ; background-color: #9c9999;"
+      <div style="color: black; padding: 15px; border: 3px solid ; background-color:#ffd147; box-shadow: 5px 10px;"
         class="background-info">
 
-        <label for="habilitacoes" style="font-weight:600; padding: 15px;" >
+        <label for="habilitacoes" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;" >
           Habilitações:
         </label>
               
-        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; ">
+        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; font-size: 18px; ">
 
           <input type="checkbox"
             
@@ -145,11 +245,11 @@
           </label>
         </div>
 
-        <label for="formacao" style="font-weight:600; padding: 15px;">
+        <label for="formacao" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
           Formações:
         </label>
 
-        <div style="display: flex; margin-top:10px; padding:15px; font-family: Helvetica, sans-serif;">
+        <div style="display: flex; margin-top:10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">
           
           <input type="checkbox" 
             id="Formaçao1" 
@@ -245,7 +345,7 @@
         </div>
 
         <div style="margin-top:15px;">
-          <label for="date" style="font-weight:600; padding: 15px;">
+          <label for="date" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
             Ano de Conclusão:
           </label>
 
@@ -255,7 +355,7 @@
         </div>
 
         <div style="margin-top:15px; ">
-          <label for="motivo" style="font-weight:600; padding: 15px;">
+          <label for="motivo" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
             Motivo da Candidatura
           </label>
 
@@ -267,12 +367,12 @@
 
       <hr> <br>
       <!-- Formulario com CV, Certificado e Conhecimento da Academia -->
-      <div style="color: white; padding: 15px; border: 3px solid; background-color:#9c9999;">        
-        <label for="comoConheceAcademia" style="font-weight:600; padding: 15px;">
+      <div style="color: black; padding: 15px; border: 3px solid; background-color:#ffd147; box-shadow: 5px 10px;">        
+        <label for="comoConheceAcademia" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
           Como obteve conhecimento da nossa Academia?*
         </label>
         
-        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; ">
+        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">
 
           <input type="checkbox" 
             id="ComoConhece1" 
@@ -322,8 +422,8 @@
 
         <div style="display:flex; justify-content: start;">
           <div style="margin-top: 10px;">
-            <label for="CV" style="font-weight:600; padding: 15px; ">
-              Upload de CV:
+            <label for="CV" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif; ">
+              Upload de <i>CV</i>:
             </label> 
     
             <input 
@@ -333,7 +433,7 @@
           </div>
 
           <div style="margin-top: 10px; margin-left: 80px;">
-            <label for="certificadoHabilitacoes" style="font-weight:600; padding: 15px;">
+            <label for="certificadoHabilitacoes" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
               Upload de Certificado de Habilitações*
             </label>
             
@@ -369,11 +469,11 @@
       <br> <hr>
 
       <!-- Button para inscrição   -->
-      <div style="color: white; border: 3px solid ; margin-top: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; background-color: #9c9999;">
+      <div style="color: black; border: 3px solid ; margin-top: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; background-color:#ffd147;">
 
         <button type="button"
           onclick="alert(`Entraremos em contacto assim que for possivel`)"
-          style="border: dot 1px red; width: 1000px; height: 40px; background-color:  black; color: white; text-align: center; font-size: 25px; font-family: Helvetica, sans-serif;" >
+          style=" box-shadow: 5px 10px; border: 3px solid black; height: 40px;  color: black; text-align: center; font-size: 25px; font-family: Helvetica, sans-serif; background-color:#ffc107;" >
 
         Enviar Inscrição para futuramente te tornares colaborador da ItGest
         </button>
@@ -382,9 +482,6 @@
 
   </body>
   
-  <footer style="height: 100px; width: 100px;">
-
-  </footer>
 </html>
  
       <!-- <h2> Formandos</h2>
