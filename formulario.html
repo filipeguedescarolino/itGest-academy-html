@@ -16,21 +16,19 @@
   </header>
 
   <style>
-    label {
-      font-size: 20px;
-    }
+    
 
 
   </style>
 
   <body style=" background-image: linear-gradient(#e3d76d, #ffc107);" >
     
-    <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;"> <!-- Titulo -->      
+    <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center; "> <!-- Titulo -->      
       <div>
         <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="attachment-full size-full" alt="" loading="lazy">
       </div>
       <div>
-        <h1 style="font-family: Times New Roman; text-align: center; text-decoration: underline; padding: 5px; font-weight: 600;" >
+        <h1 style=" text-align: center; text-transform: uppercase;  padding: 5px; font-weight: 600; font-family: Verdana, sans-serif;" >
           Inscreve-te na nossa Academia 
         </h1>
       </div>
@@ -40,11 +38,12 @@
 
     </div>
     <!-- Inicio do Form -->
-    <form style="border: 1px solid black; padding:10px; ">
-      <!-- Formulário com informações pessoais     -->
-      <div class="personal-info" style="border: 1px solid black">
+    <form style="border: 3px solid black; padding:10px; ">
 
-        <label for="Course" style="font-weight:600; padding: 15px;">
+      <!-- Formulário com informações pessoais     -->
+      <div class="personal-info" style="color: #f7efd3; padding: 15px;border: 3px solid ; background-color:#9c9999; font-family: Verdana, sans-serif;" >
+
+        <label for="Course" style="font-weight:600; padding: 15px; ">
           Academia a que se está a candidatar*:
         </label>
           
@@ -56,7 +55,7 @@
         
         <br> <br>
         
-        <label for="FullName" style="font-weight:600; padding: 15px;">
+        <label for="FullName" style="font-weight:600; padding: 15px; ">
           Nome e Apelido*:
         </label>
         
@@ -88,15 +87,16 @@
       </div>
 
       <hr> <br>
+
       <!-- Formulario com as Habilitações e Formações -->
-      <div style="border: 1px solid black"
+      <div style="color: white; padding: 15px; border: 3px solid ; background-color: #9c9999;"
         class="background-info">
 
         <label for="habilitacoes" style="font-weight:600; padding: 15px;" >
           Habilitações:
         </label>
               
-        <div style="display: flex; margin-top: 10px; padding:15px; ">
+        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; ">
 
           <input type="checkbox"
             
@@ -104,7 +104,7 @@
             name="habilitacoes1" 
             value="Ensino Secundário">
             
-          <label for="habilitacoes1" style="text-decoration: underline; padding: 1px;">
+          <label for="habilitacoes1" style="  padding: 1px;">
             Ensino Secundário
           </label>
               
@@ -113,7 +113,7 @@
             name="habilitacoes2" 
             value="Licenciatura">
 
-          <label for="habilitacoes2" style="text-decoration: underline; padding: 1px;"> 
+          <label for="habilitacoes2" style="  padding: 1px;"> 
             Licenciatura
           </label>
 
@@ -122,7 +122,7 @@
             name="habilitacoes3" 
             value="Mestrado">
 
-          <label for="habilitacoes3" style="text-decoration: underline; padding: 1px;"> 
+          <label for="habilitacoes3" style="  padding: 1px;"> 
             Mestrado
           </label>
           
@@ -131,7 +131,7 @@
             name="habilitacoes4" 
             value="Doutorament">
 
-          <label for="habilitacoes4" style="text-decoration: underline; padding: 1px;"> 
+          <label for="habilitacoes4" style="  padding: 1px;"> 
             Doutoramento
           </label>
           
@@ -140,7 +140,7 @@
             name="habilitacoes5" 
             value="Outro">
 
-          <label for="habilitacoes5" style="text-decoration: underline; padding: 1px;"> 
+          <label for="habilitacoes5" style="  padding: 1px;"> 
             Outro
           </label>
         </div>
@@ -149,14 +149,14 @@
           Formações:
         </label>
 
-        <div style="display: flex; margin-top:10px; padding:15px;">
+        <div style="display: flex; margin-top:10px; padding:15px; font-family: Helvetica, sans-serif;">
           
           <input type="checkbox" 
             id="Formaçao1" 
             name="Formaçao1" 
             value="Ciencias Sociais e Humanos">            
           
-          <label for="Formaçao1" style="text-decoration: underline; padding: 1px;">
+          <label for="Formaçao1" style="  padding: 1px;">
             Ciencias Sociais e Humanos
 
           </label>
@@ -166,7 +166,7 @@
             name="Formacao2" 
             value="Ciencias Empresariais">
 
-          <label for="Formacao2" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao2" style="  padding: 1px;"> 
             Ciencias Empresariais
           </label>
 
@@ -175,7 +175,7 @@
             name="Formacao3" 
             value="Gestao/economia">
 
-          <label for="Formacao3" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao3" style="  padding: 1px;"> 
             Gestao/economia
           </label>
           
@@ -184,7 +184,7 @@
             name="Formacao4" 
             value="Informatica">
 
-          <label for="Formacao4" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao4" style="  padding: 1px;"> 
             Informatica
           </label>
 
@@ -193,7 +193,7 @@
             name="Formacao5" 
             value="Informatica de Gestao">
 
-          <label for="Formacao5" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao5" style="  padding: 1px;"> 
             Informatica de Gestao
           </label>
           
@@ -203,7 +203,7 @@
             value="Engenharia e técnicas afins
             ">
 
-          <label for="Formaçao1" style="text-decoration: underline; padding: 1px;">
+          <label for="Formaçao1" style="  padding: 1px;">
             Engenharia e técnicas afins
           </label>
 
@@ -212,7 +212,7 @@
             name="Formacao7" 
             value="Contabilidade/ Finanças">
 
-          <label for="Formacao2" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao2" style="  padding: 1px;"> 
             Contabilidade/ Finanças
           </label>
 
@@ -221,7 +221,7 @@
             name="Formacao8" 
             value="Saúde">
 
-          <label for="Formacao3" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao3" style="  padding: 1px;"> 
             Saúde
           </label>
           
@@ -230,7 +230,7 @@
             name="Formacao9" 
             value="Serviços Sociais">
 
-          <label for="Formacao4" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao4" style="  padding: 1px;"> 
             Serviços Sociais
           </label>
 
@@ -239,7 +239,7 @@
             name="Formacao10" 
             value="Outro">
 
-          <label for="Formacao5" style="text-decoration: underline; padding: 1px;"> 
+          <label for="Formacao5" style="  padding: 1px;"> 
             Outro
           </label>
         </div>
@@ -266,20 +266,20 @@
       </div>
 
       <hr> <br>
-      
-      <div style="border: 1px solid black">        
+      <!-- Formulario com CV, Certificado e Conhecimento da Academia -->
+      <div style="color: white; padding: 15px; border: 3px solid; background-color:#9c9999;">        
         <label for="comoConheceAcademia" style="font-weight:600; padding: 15px;">
           Como obteve conhecimento da nossa Academia?*
         </label>
         
-        <div style="display: flex; margin-top: 10px; padding:15px; ">
+        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; ">
 
           <input type="checkbox" 
             id="ComoConhece1" 
             name="ComoConhece1" 
             value="Conheço alguém que faz parte do Grupo ID/ ITGEST">
                       
-          <label for="ComoConhece1" style="text-decoration: underline; padding: 1px;">
+          <label for="ComoConhece1" style="  padding: 1px;">
             Conheço alguém que faz parte do Grupo ID/ ITGEST
           </label>
                     
@@ -288,7 +288,7 @@
             name="ComoConhece2" 
             value="Redes Sociais (Facebook, instagram ou outro)">
 
-          <label for="ComoConhece2" style="text-decoration: underline; padding: 1px;"> 
+          <label for="ComoConhece2" style="  padding: 1px;"> 
             Redes Sociais (Facebook, instagram ou outro)
           </label>
 
@@ -297,7 +297,7 @@
             name="ComoConhece3" 
             value="Linkedin">
 
-          <label for="ComoConhece3" style="text-decoration: underline; padding: 1px;"> 
+          <label for="ComoConhece3" style="  padding: 1px;"> 
             Linkedin
           </label>
 
@@ -306,7 +306,7 @@
             name="ComoConhece4" 
             value="Através da faculdade/universidade">
 
-          <label for="ComoConhece4" style="text-decoration: underline; padding: 1px;"> 
+          <label for="ComoConhece4" style="  padding: 1px;"> 
             Através da faculdade/universidade
           </label>
 
@@ -315,7 +315,7 @@
             name="ComoConhece5" 
             value="Outro">
 
-          <label for="ComoConhece5" style="text-decoration: underline; padding: 1px;"> 
+          <label for="ComoConhece5" style="  padding: 1px;"> 
             Outro
           </label>
         </div>
@@ -360,7 +360,7 @@
             name="consent" 
             value="consentiment">
 
-          <label for="consent">
+          <label for="consent" style="font-family: Helvetica, sans-serif;">
             Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na <a href="https://academy.itgest.pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>
           </label>
         </div>
@@ -368,17 +368,16 @@
 
       <br> <hr>
 
-      
-        <div style="margin-top: 15px; display: flex; justify-content: center; align-items: center;">
-          <button type="button"
-            onclick="alert(`Entraremos em contacto assim que for possivel`)"
-            style="border: dot 1px red; width: 1000px; height: 40px; background-color:  #eb5555; color: white; text-align: center; font-size: 25px" >
+      <!-- Button para inscrição   -->
+      <div style="color: white; border: 3px solid ; margin-top: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; background-color: #9c9999;">
 
-          Enviar Inscrição para futuramente te tornares colaborador da ItGest
-          </button>
-        </div>
-      
+        <button type="button"
+          onclick="alert(`Entraremos em contacto assim que for possivel`)"
+          style="border: dot 1px red; width: 1000px; height: 40px; background-color:  black; color: white; text-align: center; font-size: 25px; font-family: Helvetica, sans-serif;" >
 
+        Enviar Inscrição para futuramente te tornares colaborador da ItGest
+        </button>
+      </div>      
     </form>
 
   </body>
